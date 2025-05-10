@@ -1,0 +1,444 @@
+.chakra-petch-light {
+  font-family: "Chakra Petch", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.chakra-petch-regular {
+  font-family: "Chakra Petch", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chakra-petch-medium {
+  font-family: "Chakra Petch", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.chakra-petch-semibold {
+  font-family: "Chakra Petch", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.chakra-petch-bold {
+  font-family: "Chakra Petch", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.chakra-petch-light-italic {
+  font-family: "Chakra Petch", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.chakra-petch-regular-italic {
+  font-family: "Chakra Petch", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.chakra-petch-medium-italic {
+  font-family: "Chakra Petch", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.chakra-petch-semibold-italic {
+  font-family: "Chakra Petch", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.chakra-petch-bold-italic {
+  font-family: "Chakra Petch", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* Reseteo de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Asegura que el body y el html ocupen toda la pantalla */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.manteiner{
+	width: 100%;
+	height: 100%;
+	max-width: 1800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.container{
+	width: 100%;
+	margin: auto;
+	padding: 5rem;
+}
+.section_banner{
+	width: 100%;
+	position: relative;
+	height: auto;
+}
+.banner_fondo{
+	width: 100%;
+	position: absolute;
+    object-fit: cover;
+    background-position: top;
+}
+.banner_hero{
+	margin-top: 5rem;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.banner_logo{
+	width: 230px;
+}
+.banner_personajes{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 800px;
+}
+.banner_txt{
+	font-family: "Chakra Petch";
+	font-weight: 600;
+	font-size: 24px;
+	color: #3C2313;
+	display: flex;
+	gap: 2rem;
+	flex-direction: column;
+	width: 500px;
+}
+.section_servicios{
+	position: relative;
+	z-index: 1;
+}
+.servicios_grid{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 3rem;
+}
+.target_servicios{
+	font-family: "Chakra Petch";
+	font-weight: 600;
+	width: 31%;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 1.5rem;
+	background: white;
+	overflow: hidden;
+}
+.target_img{
+	width: 100%;
+}
+.target_content{
+	padding: 2.5rem;
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+	color: #452D22;
+	font-size: 22px;
+	background: white;
+}
+.target_title{
+	color: #5C00FF;
+	font-size: 25px;
+	font-weight: 900;
+}
+.target_txt{
+	color: #452D22;
+}
+.title{
+	font-size: 25px;
+	font-weight: bold;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+.servicios_wrp{
+	display: flex;
+	gap: 3rem;
+	flex-direction: column;
+}
+.titulo{
+	font-size: 2.5rem;
+	color: #5C00FF;
+	text-align: center;
+}
+.title_line{
+	height: 5px;
+	width: 200px;
+	background: #5C00FF;
+}
+.tiktok_wrp{
+	display: flex;
+	justify-content: space-between;
+	align-items: initial;
+	gap: 2rem;
+}
+.tk_bloque{
+	padding-top: 4rem;
+	padding: 4rem 2rem 0 2rem;
+	position: relative;
+	width: 48%;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.tk_img{
+	position: absolute;
+	bottom: 0;
+	right: auto;
+	left: auto;
+	width: 350px;
+}
+.tk_box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tk_box-fondo{
+	width: 100%;
+  position: absolute;
+  top: 0;
+  right: auto;
+  left: auto;
+  height: 100%;
+}
+.tk_slider{
+	width: 50%;
+	text-align: center;
+}
+.tk_slider-video{
+	height: 700px;
+	border-radius: 1.5rem;
+	overflow: hidden;
+}
+.tk_box-text{
+	position: relative;
+	z-index: 2;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.tk_box-title{
+	font-size: 2.5rem;
+}
+.tk_box-txt{
+	font-size: 22px;
+}
+.tiktok_fondoleft{
+	position: absolute;
+	left: 0;
+	top: -500px;
+	height:200%;
+	object-fit: cover;
+	z-index: -1;
+}
+.section_tiktok{
+	position: relative;
+}
+.comentarios_wrp{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: initial;
+	gap: 3rem;
+}
+.cs_desp{
+	max-width: 90%;
+	font-size: 20px;
+	text-align: center;
+}
+.cs_flexing{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+}
+.cs_coment{
+	min-width: 21rem;
+  width: 25.5rem;
+  transition: transform 0.3s ease;
+}
+.cs_coment:hover{
+	transform: scale(1.35);
+}
+.menu{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+} 
+@media (max-width: 1024px) {
+	.banner_fondo{
+		height: 120%;
+	}
+	.title_line{
+		width: 100px;
+	}
+	.titulo{
+		font-size: 2rem;
+	}
+	.banner_personajes{
+		width: 550px;
+	}	
+	.target_content{
+		padding: 1.3rem ;
+	}
+	.target_title{
+		font-size: 19px;
+	}
+	.target_txt{
+		font-size: 16px;
+	}
+	.tk_img{
+		width: 270px;
+	}
+	.tk_box-title{
+		font-size: 1.8rem;
+	}
+	.tk_box-txt{
+		font-size: 19px;
+	}
+	.tk_slider-video{
+		height: 550px;
+	}
+	.container{
+		padding: 2.5rem;
+	}
+	.cs_coment{
+		min-width: 18rem;
+		width: 18rem;
+	}
+}
+@media (max-width: 767px) {
+	.banner_personajes{
+		width: 350px;
+	}	
+	.banner_hero{
+		margin-top: 1rem;
+	}
+	.banner_txt{
+		font-size: 18px;
+	}
+	.container{
+		padding: 1.5rem;
+	}
+	.banner_txt{
+		width: 50%;
+	}
+	.banner_logo{
+		width: 150px;
+	}
+	.servicios_grid{
+		margin-top: 0rem;
+	}
+	.target_content{
+		padding: 1rem;
+	}
+	.target_title{
+		font-size: 17px;
+	}
+	.tk_box-fondo{
+		display: none;
+	}
+	.tiktok_wrp{
+		display: flex;
+		flex-direction: column;
+		flex-flow: column-reverse;
+	}
+	.tk_bloque{
+		width: 100%;
+		background-color: #ae80ff;
+		height: auto;
+		padding: 2rem 2rem 6rem 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 1rem;
+	}
+	.tk_img{
+		opacity: 0.2;
+	}
+	.tk_slider{
+		width: 100%;
+		margin-top: -5rem;
+		position: relative;
+		z-index: 2;
+	}
+	.tk_slider-video {
+        height: 400px;
+    }
+	.cs_coment{
+		min-width: 13rem;
+		width: 13rem;
+	}
+}
+@media (max-width: 480px) {
+	.title_line{
+		display: none;
+	}
+	.titulo{
+		font-size: 1.5rem;
+	}
+	.comentarios_wrp{
+		gap:1.5rem
+	}
+	.cs_coment{
+		width: 100%;
+	}
+	.cs_desp{
+		font-size: 16px;
+	}
+	.tk_box-title{
+		font-size: 1.5rem;
+	}
+	.tk_box-text{
+		gap: 1rem;
+	}
+	.tk_bloque{
+		padding: 1.5rem 1.5rem 5rem 1rem;
+	}
+	.servicios_grid{
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem
+	}
+	.target_servicios{
+		width: 100%;
+	}
+	.banner_hero{
+		width: 100%;
+	}
+	.banner_txt{
+		width: 100%;
+	}
+	.banner_personajes{
+		width: 250px;
+		opacity: 0.5;
+	}
+}
