@@ -3,7 +3,50 @@
   font-weight: 300;
   font-style: normal;
 }
+.bns_boton{
+	cursor: pointer;
+	
+}
 
+.bns_boton:hover{
+	 transform: translateY(-8px);
+  		transition: transform 0.3s ease;
+}
+
+.bns_flotante{
+	position: fixed;
+	bottom:1rem;
+	right: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	z-index: 3;
+	gap: 1rem;
+}
+.bns_sociales{
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	display: none;
+	position: absolute;
+    bottom: 5rem;
+}
+.bns_img{
+	width: 2.5rem;
+	height: 2.5rem;
+	max-width: 2.5rem;
+	max-height: 2.5rem;
+	border-radius: 50%;
+}
+.bns_img.large{
+	width: 3.5rem;
+	height: 3.5rem;
+	max-width: 3.5rem;
+	max-height: 3.5rem
+}
+.bns_img.large.sborder{
+	border-radius: 0;
+}
 .chakra-petch-regular {
   font-family: "Chakra Petch", serif;
   font-weight: 400;
@@ -105,7 +148,7 @@ html, body {
 	justify-content: space-between;
 }
 .banner_logo{
-	width: 230px;
+	width: 300px;
 }
 .banner_personajes{
 	position: absolute;
@@ -116,12 +159,12 @@ html, body {
 .banner_txt{
 	font-family: "Chakra Petch";
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 27px;
 	color: #3C2313;
 	display: flex;
 	gap: 2rem;
 	flex-direction: column;
-	width: 500px;
+	width: 51%;
 }
 .section_servicios{
 	position: relative;
@@ -154,6 +197,7 @@ html, body {
 	color: #452D22;
 	font-size: 22px;
 	background: white;
+	align-items: baseline;
 }
 .target_title{
 	color: #5C00FF;
@@ -192,6 +236,8 @@ html, body {
 	justify-content: space-between;
 	align-items: initial;
 	gap: 2rem;
+	max-width: 1100px;
+	margin: auto;
 }
 .tk_bloque{
 	padding-top: 4rem;
@@ -278,9 +324,22 @@ html, body {
 	gap: 0.5rem;
 	flex-wrap: wrap;
 }
+.target_btn{
+	padding: 0.75rem 3rem;
+	border-radius: 0.5rem;
+	background: #ae80ff;
+	border:0;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+.target_btn:hover{ 
+	 transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
 .cs_coment{
-	min-width: 21rem;
-  width: 25.5rem;
+width: 32%;
   transition: transform 0.3s ease;
 }
 .cs_coment:hover{
@@ -440,5 +499,8 @@ html, body {
 	.banner_personajes{
 		width: 250px;
 		opacity: 0.5;
+	}
+	.target_btn{
+		font-size: 16px;
 	}
 }
