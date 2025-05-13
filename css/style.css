@@ -1,106 +1,3 @@
-.chakra-petch-light {
-  font-family: "Chakra Petch", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.bns_boton{
-	cursor: pointer;
-	
-}
-
-.bns_boton:hover{
-	 transform: translateY(-8px);
-  		transition: transform 0.3s ease;
-}
-
-.bns_flotante{
-	position: fixed;
-	bottom:1rem;
-	right: 2rem;
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	z-index: 3;
-	gap: 1rem;
-}
-.bns_sociales{
-	display: flex;
-	gap: 1rem;
-	align-items: center;
-	display: none;
-	position: absolute;
-    bottom: 5rem;
-}
-.bns_img{
-	width: 2.5rem;
-	height: 2.5rem;
-	max-width: 2.5rem;
-	max-height: 2.5rem;
-	border-radius: 50%;
-}
-.bns_img.large{
-	width: 3.5rem;
-	height: 3.5rem;
-	max-width: 3.5rem;
-	max-height: 3.5rem
-}
-.bns_img.large.sborder{
-	border-radius: 0;
-}
-.chakra-petch-regular {
-  font-family: "Chakra Petch", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.chakra-petch-medium {
-  font-family: "Chakra Petch", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.chakra-petch-semibold {
-  font-family: "Chakra Petch", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.chakra-petch-bold {
-  font-family: "Chakra Petch", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.chakra-petch-light-italic {
-  font-family: "Chakra Petch", serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.chakra-petch-regular-italic {
-  font-family: "Chakra Petch", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.chakra-petch-medium-italic {
-  font-family: "Chakra Petch", serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.chakra-petch-semibold-italic {
-  font-family: "Chakra Petch", serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.chakra-petch-bold-italic {
-  font-family: "Chakra Petch", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
 
 /* Reseteo de márgenes y paddings */
 * {
@@ -114,6 +11,7 @@ html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  font-family: "Josefin Sans", sans-serif;
 }
 .manteiner{
 	width: 100%;
@@ -157,13 +55,13 @@ html, body {
 	width: 800px;
 }
 .banner_txt{
-	font-family: "Chakra Petch";
 	font-weight: 600;
 	font-size: 27px;
 	color: #3C2313;
 	display: flex;
 	gap: 2rem;
 	flex-direction: column;
+	align-items: flex-start;
 	width: 51%;
 }
 .section_servicios{
@@ -178,7 +76,6 @@ html, body {
 	margin-top: 3rem;
 }
 .target_servicios{
-	font-family: "Chakra Petch";
 	font-weight: 600;
 	width: 31%;
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
@@ -200,7 +97,7 @@ html, body {
 	align-items: baseline;
 }
 .target_title{
-	color: #5C00FF;
+	color: #452d22;
 	font-size: 25px;
 	font-weight: 900;
 }
@@ -316,6 +213,8 @@ html, body {
 	max-width: 90%;
 	font-size: 20px;
 	text-align: center;
+	margin: auto;
+	color: #3C2313;
 }
 .cs_flexing{
 	display: flex;
@@ -333,10 +232,25 @@ html, body {
 	color: white;
 	cursor: pointer;
 	text-decoration: none;
+	box-shadow: 5px 5px 10px 2px rgba(69, 45, 34, 0.253);
 }
 .target_btn:hover{ 
 	 transform: translateY(-5px);
   transition: transform 0.3s ease;
+}
+.target_btn.banner{
+	background-color: #5d00ff44;
+	color: #452D22;
+	padding: 1rem 3rem;
+	font-weight:bold;
+	box-shadow: 5px 5px 10px 2px rgba(69, 45, 34, 0.507);
+}
+.target_btn.crema{
+	background-color: #F5E6D3;
+	color: #452D22;
+	padding: 1rem 3rem;
+	font-weight:bold;
+	box-shadow: 5px 5px 10px 2px rgba(69, 45, 34, 0.507);
 }
 .cs_coment{
 width: 32%;
@@ -345,6 +259,59 @@ width: 32%;
 .cs_coment:hover{
 	transform: scale(1.35);
 }
+.bns_boton{
+	cursor: pointer;
+	right: 0;
+}
+
+.bns_boton:hover{
+	 transform: translateY(-8px);
+  		transition: transform 0.3s ease;
+}
+
+.bns_flotante{
+	position: fixed;
+	bottom:1rem;
+	right: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	z-index: 3;
+	gap: 1rem;
+}
+.bns_sociales{
+  	transition: opacity 0.5s ease, transform 0.5s ease;
+	display: none;
+	gap: 0.5rem;
+	align-items: center;
+	display: none;
+	position: absolute;
+    bottom: 4rem;
+	right: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.bns_sociales.visible {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+.bns_img{
+	width: 2.5rem;
+	height: 2.5rem;
+	max-width: 2.5rem;
+	max-height: 2.5rem;
+	border-radius: 50%;
+}
+.bns_img.large{
+	width: 3.5rem;
+	height: 3.5rem;
+	max-width: 3.5rem;
+	max-height: 3.5rem
+}
+.bns_img.large.sborder{
+	border-radius: 0;
+}
 .menu{
 	width: 100%;
 	position: fixed;
@@ -352,6 +319,97 @@ width: 32%;
 	z-index: 3;
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 } 
+.faq_wrp{
+	display: flex;
+	gap: 2rem;
+	flex-direction: column;
+	color: #3C2313
+}
+.faq_triggers{
+	display: flex;
+	gap: 2rem;
+	flex-direction: column;
+}
+.faq_acordeon {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    color: #3C2313;
+    border-radius: 1rem;
+    box-shadow: 5px 10px 15px 2px rgba(93, 0, 255, 0.233);
+    position: relative; /* Necesario para el pseudo-elemento */
+    overflow: hidden; /* Asegura que el borde no se salga del border-radius */
+}
+
+.faq_acordeon::before {
+    content: ""; /* Imprescindible para que el pseudo-elemento exista */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 1rem; /* Mismo border-radius que el contenedor */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Transición suave del color */
+	pointer-events: none;
+}
+
+.faq_acordeon:hover::before {
+    border-color: #5C00FF; /* Color del borde al hacer hover */
+    animation: borderDraw 1.5s linear forwards; /* Animación solo una vez (sin infinite) */
+}
+
+@keyframes borderDraw {
+    0% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%); /* Inicio: borde invisible */
+    }
+    25% {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%); /* Dibuja borde superior */
+    }
+    50% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Dibuja borde derecho */
+    }
+    75% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Dibuja borde inferior */
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Dibuja borde izquierdo */
+    }
+}
+.faq_trigger{
+	cursor: pointer;
+	padding: 1rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	width: 100%;
+
+}
+.faq_title{
+	font-size: 1.3rem;
+	color: #5C00FF;
+}
+.faq_arrow{
+	width: 50px;
+}
+.faq_body{
+	height: 0;
+	overflow: hidden;
+	transition: height 0.6s ease;
+}
+.faq_content{
+	padding: 0 2rem 2rem 2rem;
+
+}
+.faq_body.active{
+	height: auto;
+
+}
+
 @media (max-width: 1024px) {
 	.banner_fondo{
 		height: 120%;
@@ -472,6 +530,7 @@ width: 32%;
 	}
 	.cs_desp{
 		font-size: 16px;
+		color: #3C2313;
 	}
 	.tk_box-title{
 		font-size: 1.5rem;
