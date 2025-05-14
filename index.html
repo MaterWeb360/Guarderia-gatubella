@@ -59,7 +59,21 @@
 
 <body>
     <main class="manteiner">
-        <header class="menu"></header>
+        <header class="menu" id="menu">
+            <div class="container_main">
+                <div class="menu_wrp">
+                    <nav class="menu_nav">
+                        <a href="#banner" class="menu_link">Nosotros</a>
+                        <a href="#servicios" class="menu_link">Servicios</a>
+                        <a href="#beneficios" class="menu_link">Beneficios</a>
+                        <a href="#testimonios" class="menu_link">Testimonios</a>
+                        <a href="#faq" class="menu_link">Preguntas frecuentes</a>
+                        <a href="#redes" class="menu_link">Redes sociales</a>
+                    </nav>
+                    <img class="menu_logo" src="images/main.png" alt="Menu hamburguesa">
+                </div>
+            </div>
+        </header>
         <section id="banner" class="section_banner">
             <img class="banner_fondo" src="images/banner.png" alt="Fondo de la guardería Gatubella">
             <img class="banner_personajes" src="images/banner-personajes.png" alt="Ilustración de mascotas felices en la guardería">
@@ -122,8 +136,7 @@
                 </div>
             </div>
         </section>
-
-        <section id="tiktok" class="section_tiktok">
+        <section id="beneficios" class="section_tiktok">
             <img class="tiktok_fondoleft" src="images/fondo-psico.png" alt="Fondo decorativo sección TikTok">
             <div class="container">
                 <div class="tiktok_wrp">
@@ -152,8 +165,7 @@
                 </div>
             </div>
         </section>
-
-        <section id="comentarios" class="section_comentarios">
+        <section id="testimonios" class="section_comentarios">
             <div class="container">
                 <div class="comentarios_wrp">
                     <div class="title">
@@ -176,19 +188,7 @@
                 </div>
             </div>
         </section>
-        <!-- 
-        
-        CREAR SECCION DE PREGUNTAS FRECUENTES
-            ¿Qué vacunas son necesarias para ingresar a la guardería?
-            ¿Debo llevar la comida de mi mascota?
-            ¿Puedo traer los juguetes o camas de mi mascota?
-            ¿Cómo se manejan las emergencias médicas?
-            ¿Qué actividades realiza mi mascota durante su estancia?
-            ¿Cuál es la política de recogida y entrega?
-            ¿Qué sucede si mi mascota muestra signos de ansiedad o agresividad?
-            ¿Ofrecen servicios adicionales como baño o entrenamiento?
-        -->
-        <section class="section_faq">
+        <section class="section_faq" id="faq">
             <div class="container">
                 <div class="faq_wrp">
                     <div class="title">
@@ -317,6 +317,18 @@
                 </div>
             </div>
         </section>
+        <section class="redes" id="redes">
+            <div class="container">
+                <div class="redes_wrp">
+                    <div class="redes_list">
+                        <a href="https://www.tiktok.com/@hotelparamascotasencusco" target="_blank" class="redes_redLink"> <img src="images/tiktok.png" alt="" class="redes_redImg"> /hotelparamascotasencusco</a>
+                        <a href="https://wa.link/771m1t" target="_blank" class="redes_redLink"> <img src="images/wsp.png" alt="" class="redes_redImg"> +51 907 142 823</a>
+                        <a href="https://www.facebook.com/profile.php?id=61557441105958" target="_blank" class="redes_redLink"> <img src="images/fc.png" alt="" class="redes_redImg"> /guarderiaparamascotascusco</a>
+                        <a href="https://www.instagram.com/hotel_mascotas_cusco/" target="_blank" class="redes_redLink"> <img src="images/ig.png" alt="" class="redes_redImg"> /hotel_mascotas_cusco</a>    
+                    </div>
+                </div>
+            </div>
+        </section>
         <div class="bns_flotante">
             <a href="https://wa.link/771m1t" target="_blank" class="bns_boton" aria-label="Enviar mensaje por WhatsApp">
                 <img src="images/wsp.png" alt="Icono de WhatsApp" class="bns_img large sborder">
@@ -324,10 +336,10 @@
             <div class="bns_boton" role="button" onclick="mostrarRedes()" aria-label="Mostrar redes sociales">
                 <img src="images/redes.png" alt="Icono de redes sociales" class="bns_img large">
                 <div class="bns_sociales" id="bnsSociales" hidden>
-                    <a href="https://www.tiktok.com/@cuscohotelparamascotas?_t=ZM-8t9bTbQEi4E&_r=1" class="bns_boton" target="_blank" aria-label="Ver perfil en TikTok">
+                    <a href="https://www.tiktok.com/@hotelparamascotasencusco" class="bns_boton" target="_blank" aria-label="Ver perfil en TikTok">
                         <img src="images/tiktok.png" alt="TikTok" class="bns_img">
                     </a>
-                    <a href="https://www.instagram.com/hotelparamascotasencusco?igsh=NnZ5aTE5aHR6NGV4" class="bns_boton" target="_blank" aria-label="Ver perfil en Instagram">
+                    <a href="https://www.instagram.com/hotel_mascotas_cusco/" class="bns_boton" target="_blank" aria-label="Ver perfil en Instagram">
                         <img src="images/ig.png" alt="Instagram" class="bns_img">
                     </a>
                     <a href="https://www.facebook.com/profile.php?id=61557441105958" class="bns_boton" target="_blank" aria-label="Ver perfil en Facebook">
@@ -336,6 +348,7 @@
                 </div>
             </div>
         </div>
+        
 
     </main>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

@@ -5,13 +5,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+#menu {
+  transition: transform 0.3s ease;
+}
 /* Asegura que el body y el html ocupen toda la pantalla */
 html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
   font-family: "Josefin Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 .manteiner{
 	width: 100%;
@@ -19,6 +22,7 @@ html, body {
 	max-width: 1800px;
 	margin-right: auto;
 	margin-left: auto;
+	position: relative;
 }
 .container{
 	width: 100%;
@@ -239,7 +243,7 @@ html, body {
   transition: transform 0.3s ease;
 }
 .target_btn.banner{
-	background-color: #5d00ff44;
+	background-color: white;
 	color: #452D22;
 	padding: 1rem 3rem;
 	font-weight:bold;
@@ -409,6 +413,83 @@ width: 32%;
 	height: auto;
 
 }
+.redes_wrp{
+	display: flex;
+	gap: 2rem;
+	flex-direction: column;
+	color: #3C2313;
+}
+.redes_list{
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	color: #3C2313;
+	justify-content: center;
+}
+.redes_redLink{
+	background-color: #E7DAFF;
+	color: #5C00FF;
+	padding: 0.5rem 1rem;
+	border-radius: 0.35rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 600;
+}
+.redes_redImg{
+	width: 40px;
+}
+.menu {
+  position: fixed;
+  width: 90%;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.7); /* Fondo blanco translúcido */
+  border-radius: 0.75rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 10px 15px 2px rgba(93, 0, 255, 0.233);
+  backdrop-filter: blur(5px); /* Efecto borroso */
+  -webkit-backdrop-filter: blur(20px); /* Compatibilidad con Safari */
+}
+
+.menu_logo{
+	width: 35px;
+	display: none;
+}
+.menu_nav{
+	display: flex;
+	gap: 2rem;
+}
+.menu_wrp{
+	display: flex;
+	align-items: center;
+	justify-content: center
+
+}
+.container_main{
+	width: 100%;
+}
+.menu_link {
+  color: #3C2313;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 20px;
+  transition: all 0.4s ease; /* Transición más lenta y suave */
+  display: inline-block; /* Necesario para que el transform funcione correctamente */
+}
+
+.menu_link:hover {
+  color: #5C00FF;
+  transform: translateY(-5px); /* Se desplaza hacia arriba */
+}
 
 @media (max-width: 1024px) {
 	.banner_fondo{
@@ -451,8 +532,18 @@ width: 32%;
 		min-width: 18rem;
 		width: 18rem;
 	}
+	.menu_nav{
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+	.menu_link{
+		font-size: 18px;
+	}
 }
 @media (max-width: 767px) {
+	.menu{
+		display: none;
+	}
 	.banner_personajes{
 		width: 350px;
 	}	
