@@ -501,6 +501,9 @@ width: 32%;
 	.faq_trigger{
 		padding: 1rem;;
 	}
+	.redes_list{
+		flex-wrap: wrap;
+	}
 	.faq_content{
 		padding: 1rem;
 	}
@@ -553,6 +556,12 @@ width: 32%;
 	}
 }
 @media (max-width: 767px) {
+	.redes_list{
+		width: 100%;
+	}
+	.redes_redLink{
+		width: 100%;
+	}
 	.menu{
 		display: none;
 	}
