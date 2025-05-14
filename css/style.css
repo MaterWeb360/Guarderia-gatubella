@@ -492,6 +492,18 @@ width: 32%;
 }
 
 @media (max-width: 1024px) {
+	.faq_acordeon{
+		width: 100%;
+	}
+	.faq_title{
+		font-size: 1.1rem;
+	}
+	.faq_trigger{
+		padding: 1rem;;
+	}
+	.faq_content{
+		padding: 1rem;
+	}
 	.banner_fondo{
 		height: 120%;
 	}
