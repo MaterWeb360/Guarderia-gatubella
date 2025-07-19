@@ -38,6 +38,16 @@ $('.faq_trigger').on('click', function () {
   }
 });
 
+function cerrarReserva(){
+  const reserva = document.querySelector(".form_rserva");
+  reserva.style.display = "none";
+}
+function abrirReserva(){
+  const reserva = document.querySelector(".form_rserva");
+  reserva.style.display = "flex";
+}
+
+ 
 
 
 

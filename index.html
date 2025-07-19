@@ -10,9 +10,6 @@
     <meta name="google" content="notranslate">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Google adsense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5723975015804288" crossorigin="anonymous"></script>
-
     <!-- Meta Open Graph para redes sociales -->
     <meta property="og:title" content="Guardería Gatubella - Cuidado y hospedaje seguro para tu mascota">
     <meta property="og:description" content="En Guardería Gatubella cuidamos a tu perro o gato como en casa, sin jaulas y con atención personalizada. Hotel y guardería para mascotas en un ambiente seguro y amoroso.">
@@ -37,40 +34,44 @@
     
     <!-- Schema.org para mejorar SEO -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "PetStore",
-      "name": "Guardería Gatubella",
-      "url": "https://guarderiagatubella.netlify.app/",
-      "logo": "https://guarderiagatubella.netlify.app/images/logo.png",
-      "description": "Guardería y hotel para mascotas en Cusco, ofreciendo atención personalizada para perros y gatos.",
-      "telephone": "+51 907 142 823",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Jr: Cahuide 189",
-        "addressLocality": "Cusco",
-        "addressRegion": "CUS",
-        "postalCode": "08000",
-        "addressCountry": "PE"
-      }
-    }
+        {
+        "@context": "https://schema.org",
+        "@type": "PetStore",
+        "name": "Guardería Gatubella",
+        "url": "https://guarderiagatubella.netlify.app/",
+        "logo": "https://guarderiagatubella.netlify.app/images/logo.png",
+        "description": "Guardería y hotel para mascotas en Cusco, ofreciendo atención personalizada para perros y gatos.",
+        "telephone": "+51 907 142 823",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jr: Cahuide 189",
+            "addressLocality": "Cusco",
+            "addressRegion": "CUS",
+            "postalCode": "08000",
+            "addressCountry": "PE"
+        }
+        }
     </script>
 </head>
 
 <body>
     <main class="manteiner">
-        <header class="menu" id="menu">
+        <header class="main" id="menu">
             <div class="container_main">
-                <div class="menu_wrp">
-                    <nav class="menu_nav">
-                        <a href="#banner" class="menu_link">Nosotros</a>
-                        <a href="#servicios" class="menu_link">Servicios</a>
-                        <a href="#beneficios" class="menu_link">Beneficios</a>
-                        <a href="#testimonios" class="menu_link">Testimonios</a>
-                        <a href="#faq" class="menu_link">Preguntas frecuentes</a>
-                        <a href="#redes" class="menu_link">Redes sociales</a>
-                    </nav>
-                    <img class="menu_logo" src="images/main.png" alt="Menu hamburguesa">
+                <div class="menu">
+                    <div class="menu_wrp">
+                        <nav class="menu_nav">
+                            <a href="#banner" class="menu_link">Nosotros</a>
+                            <a href="#servicios" class="menu_link">Servicios</a>
+                            <a href="#beneficios" class="menu_link">Beneficios</a>
+                            <a href="#testimonios" class="menu_link">Testimonios</a>
+                            <a href="#redes" class="menu_link">Redes sociales</a>
+                            <a href="#libro" class="menu_link">Libro de reclamaciones</a>
+                            <a href="#faq" class="menu_link">FAQ</a>
+                            <button onclick="abrirReserva()" class="button reservas">Reservar</button>
+                        </nav>
+                        <!--<img class="menu_logo" src="images/main.png" alt="Menu hamburguesa">-->
+                    </div>
                 </div>
             </div>
         </header>
@@ -97,6 +98,7 @@
             <div class="container">
                 <div class="servicios_wrp">
                     <div class="servicios_grid">
+
                         <div class="target_servicios">
                             <img class="target_img" src="images/pre1.png" alt="Hotel para mascotas en GatuBella">
                             <div class="target_content">
@@ -107,6 +109,7 @@
                                 <a href="https://wa.link/wba545" class="target_btn" target="_blank" rel="noopener noreferrer">Saber más</a>
                             </div>
                         </div>
+
                         <div class="target_servicios">
                             <img class="target_img" src="images/pre2.png" alt="Guardería diaria para mascotas">
                             <div class="target_content">
@@ -317,6 +320,47 @@
                 </div>
             </div>
         </section>
+         <section class="section_libro" id="libro">
+            <div class="container">
+                <div class="libro_wrp">
+                    <div class="libro_colInfo">
+                        <div class="title is-left">
+                            <h2 class="titulo is-white">Libro de Reclamaciones</h2>
+                        </div>
+                        <p>Registrate y expón tu queja, en Gatubella Hotel y guardería nos interesa saber tus inquietudes.</p>
+                    </div>
+                    <div class="libro_colForm">
+                        <form action="https://formsubmit.co/cuadra.13@hotmail.com" method="POST" class="libro_form">
+                            <div class="libro_formCont">
+                                <input class="form_input" name="nombres" placeholder="Nombres" type="text" required>
+                                <input class="form_input" name="apellidos" placeholder="Apellidos" type="text" required>
+                            </div>
+
+                            <div class="libro_formCont">
+                                <input class="form_input" name="email" placeholder="Email" type="email" required>
+                                <textarea class="form_textArea" name="mensaje" placeholder="Describa su inquietud.." required></textarea>
+                            </div>
+
+                            <div class="libro_formCont">
+                                <label class="libro_formCheck">
+                                  <input class="libro_formChecked" type="checkbox" name="acepto_politicas" value="Sí" required>
+                                  Acepto las políticas de privacidad
+                                </label>
+
+                                <button type="submit" class="libro_formSubmit">Enviar</button>
+                            </div>
+
+                            <!-- Campos ocultos necesarios para FormSubmit -->
+                            <input type="hidden" name="_subject" value="Libro de Reclamaciones">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://guarderiagatubella.netlify.app/gracias.html">
+                            <input type="text" name="_honey" style="display:none">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="redes" id="redes">
             <div class="container">
                 <div class="redes_wrp">
@@ -331,7 +375,7 @@
         </section>
         <div class="bns_flotante">
             <a href="https://wa.link/771m1t" target="_blank" class="bns_boton" aria-label="Enviar mensaje por WhatsApp">
-                <img src="images/wsp.png" alt="Icono de WhatsApp" class="bns_img large sborder">
+                <img src="images/wsp-foat.png" alt="Icono de WhatsApp" class="bns_img large sborder">
             </a>
             <div class="bns_boton" role="button" onclick="mostrarRedes()" aria-label="Mostrar redes sociales">
                 <img src="images/redes.png" alt="Icono de redes sociales" class="bns_img large">
@@ -348,10 +392,58 @@
                 </div>
             </div>
         </div>
+        <div class="form_rserva">
+            <div class="form_rserva-cont">
+                <div class="form_rserva-cerrar">
+                    <img src="images/cerrar.png" alt="" class="form_rserva-close" onclick="cerrarReserva()">
+                </div>
+                <div class="form_rserva-info">
+                    <img src="images/reserva.png" alt="" class="form_rserva-image">
+                    <div class="form_rserva-txt">
+                        <form action="https://formsubmit.co/cuadra.13@hotmail.com" method="POST"  class="form_rserva-fr">
+                            <div class="form_title">
+                                <h2 class="form_titulo">Reserva la mejor</h2>
+                                <span class="form_subtitulo">estadía para tu mascota en cusco.</span>
+                            </div>
+                            <div class="form_inputs">
+                                <input type="text" name="nombres" placeholder="Nombres completos del dueño" class="form_ipt">
+                                <input type="text" name="celular" placeholder="Teléfono/Celular" class="form_ipt">
+                                <input type="text" name="email" placeholder="Email (Opcional)" class="form_ipt">
+                                <div class="inpt_box">
+                                    <select name="size_mascota" id="" class="form_ipt">
+                                        <option disabled selected>Tamaño de tu mascota</option>
+                                        <option value="Pequeño">Pequeño</option>
+                                        <option value="Mediano">Mediano</option>
+                                        <option value="Grande">Grande</option>
+                                    </select>
+                                </div>
+                                <div class="inpt_box">
+                                    <label for="fecha_llegada">Llegada</label>
+                                    <input type="date" id="fecha_llegada" name="fecha_llegada" class="form_ipt" value="">
+                                </div>
+                                <div class="inpt_box">
+                                    <label for="fecha_llegada">Salida</label>
+                                    <input type="date" id="fecha_salida" name="fecha_salida" class="form_ipt" value="">
+                                </div>
+                                <p class="form_label" >Tras completar el registro, un asesor se comunicará contigo hoy para acompañarte en el proceso de confirmación de tu reserva. <br>
+                                Durante la conversación, te indicará cómo realizar el abono de 50 soles requerido para asegurar tu lugar.</p>
+
+                                <input type="hidden" name="_next" value="https://guarderiagatubella.netlify.app/gracias.html">
+                                <input type="hidden" name="_subject" value="Nueva solicitud de reserva desde el sitio web">
+                                <input type="text" name="_honey" style="display:none">
+                            </div>
+                            <button class="button form_submit" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         
 
     </main>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- GSAP Core (obligatorio) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="js/gatubella.js" defer></script>
 </body>
