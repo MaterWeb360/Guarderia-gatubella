@@ -59,18 +59,23 @@
         <header class="main" id="menu">
             <div class="container_main">
                 <div class="menu">
+                    <div class="open_contMain" id="openId" onclick="abrirMenu()">
+                        <img class="open_main" src="assets/img/main-home.svg">
+                    </div>
+                    <div class="open_contMain" id="closeId" onclick="cerrarMenu()">
+                        <img class="open_main" src="assets/img/close.png">
+                    </div>
                     <div class="menu_wrp">
                         <nav class="menu_nav">
-                            <a href="#banner" class="menu_link">Nosotros</a>
-                            <a href="#servicios" class="menu_link">Servicios</a>
-                            <a href="#beneficios" class="menu_link">Beneficios</a>
-                            <a href="#testimonios" class="menu_link">Testimonios</a>
-                            <a href="#redes" class="menu_link">Redes sociales</a>
-                            <a href="#libro" class="menu_link">Libro de reclamaciones</a>
-                            <a href="#faq" class="menu_link">FAQ</a>
+                            <a onclick="cerrarMenu()" href="#banner" class="menu_link">Nosotros</a>
+                            <a onclick="cerrarMenu()" href="#servicios" class="menu_link">Servicios</a>
+                            <a onclick="cerrarMenu()" href="#beneficios" class="menu_link">Beneficios</a>
+                            <a onclick="cerrarMenu()" href="#testimonios" class="menu_link">Testimonios</a>
+                            <a onclick="cerrarMenu()" href="#redes" class="menu_link">Redes sociales</a>
+                            <a onclick="cerrarMenu()" href="#libro" class="menu_link">Libro de reclamaciones</a>
+                            <a onclick="cerrarMenu()" href="#faq" class="menu_link">FAQ</a>
                             <button onclick="abrirReserva()" class="button reservas">Reservar</button>
                         </nav>
-                        <!--<img class="menu_logo" src="images/main.png" alt="Menu hamburguesa">-->
                     </div>
                 </div>
             </div>
@@ -325,7 +330,7 @@
                 <div class="libro_wrp">
                     <div class="libro_colInfo">
                         <div class="title is-left">
-                            <h2 class="titulo is-white">Libro de Reclamaciones</h2>
+                            <h2 class="titulo is-white is-left">Libro de Reclamaciones</h2>
                         </div>
                         <p>Registrate y expón tu queja, en Gatubella Hotel y guardería nos interesa saber tus inquietudes.</p>
                     </div>

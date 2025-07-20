@@ -1,6 +1,5 @@
 function mostrarRedes() {
   const redes = document.querySelector(".bns_sociales");
-
   if (redes.classList.contains("visible")) {
     redes.classList.remove("visible");
     redes.style.opacity = "0";
@@ -21,8 +20,6 @@ function mostrarRedes() {
     redes.style.transform = "translateY(0)";
   }
 }
-
-
 $('.faq_trigger').on('click', function () {
   const $acordeon = $(this).closest('.faq_acordeon');
   const $body = $acordeon.find('.faq_body');
@@ -37,7 +34,6 @@ $('.faq_trigger').on('click', function () {
     $body.css('height', fullHeight + 'px');
   }
 });
-
 function cerrarReserva(){
   const reserva = document.querySelector(".form_rserva");
   reserva.style.display = "none";
@@ -46,13 +42,19 @@ function abrirReserva(){
   const reserva = document.querySelector(".form_rserva");
   reserva.style.display = "flex";
 }
-
- 
-
-
-
-
-
-
-
-
+function cerrarMenu(){
+  const menu = document.querySelector(".menu_wrp");
+  const buttonOpen = document.querySelector("#openId");
+  const buttonClose = document.querySelector("#closeId");
+  menu.style.display = "none";
+  buttonOpen.style.display = "flex";
+  buttonClose.style.display = "none"; 
+}
+function abrirMenu(){
+  const menu = document.querySelector(".menu_wrp");
+  const buttonOpen = document.querySelector("#openId");
+  const buttonClose = document.querySelector("#closeId");
+  menu.style.display = "flex";
+  buttonOpen.style.display = "none";
+  buttonClose.style.display = "flex"; 
+}
