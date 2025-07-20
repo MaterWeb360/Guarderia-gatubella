@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="En Guardería Gatubella cuidamos a tu perro o gato como en casa, sin jaulas y con atención personalizada. Hotel y guardería para mascotas en un ambiente seguro y amoroso.">
-    <meta name="keywords" content="guardería para mascotas, hotel para mascotas, hospedaje para mascotas, guardería de perros, guardería de gatos, cuidado de mascotas, alojamiento para mascotas">
+    <meta name="description" content="En Guardería Gatubella, en Cusco, cuidamos a tu mascota como en casa, sin jaulas y con atención personalizada. Hotel y guardería para mascotas en un ambiente seguro y amoroso.">
+    <meta name="keywords" content="guardería para mascotas en Cusco, hotel para mascotas en Cusco, hospedaje para mascotas en Cusco, guardería de perros Cusco, guardería de gatos Cusco, cuidado de mascotas, alojamiento para mascotas">
     <meta name="author" content="Guardería Gatubella">
     <meta name="robots" content="index, follow">
     <meta name="google" content="notranslate">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Meta Open Graph para redes sociales -->
-    <meta property="og:title" content="Guardería Gatubella - Cuidado y hospedaje seguro para tu mascota">
-    <meta property="og:description" content="En Guardería Gatubella cuidamos a tu perro o gato como en casa, sin jaulas y con atención personalizada. Hotel y guardería para mascotas en un ambiente seguro y amoroso.">
+    <meta property="og:title" content="Guardería Gatubella - Cuidado y hospedaje para tu mascota en Cusco">
+    <meta property="og:description" content="En Guardería Gatubella, en Cusco, cuidamos a tu perro o gato como en casa, sin jaulas y con atención personalizada. Hotel y guardería para mascotas en un ambiente seguro y amoroso.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://guarderiagatubella.netlify.app/">
     <meta property="og:image" content="https://guarderiagatubella.netlify.app/images/logo.png">
 
     <!-- Meta Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Guardería Gatubella - Cuidado y hospedaje seguro para tu mascota">
-    <meta name="twitter:description" content="En GatuBella, más que una guardería, ofrecemos una experiencia personalizada y sin jaulas para perros y gatos.">
+    <meta name="twitter:title" content="Guardería Gatubella - Cuidado y hospedaje para tu mascota en Cusco">
+    <meta name="twitter:description" content="En Gatubella, en Cusco, más que una guardería, ofrecemos una experiencia personalizada y sin jaulas para perros y gatos.">
     <meta name="twitter:image" content="https://guarderiagatubella.netlify.app/images/logo.png">
+
 
     <title>GatuBella Hotel&Guardería - Hotel para mascotas - Pet boarding - Pet lodging</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
@@ -337,6 +338,7 @@
                     <div class="libro_colForm">
                         <form action="https://formsubmit.co/gatubellaindira@gmail.com" method="POST" class="libro_form">
                             <input type="hidden" name="_cc" value="cuadravillavicencioj@gmail.com">
+
                             <div class="libro_formCont">
                                 <input class="form_input" name="nombres" placeholder="Nombres" type="text" required>
                                 <input class="form_input" name="apellidos" placeholder="Apellidos" type="text" required>
@@ -349,19 +351,20 @@
 
                             <div class="libro_formCont">
                                 <label class="libro_formCheck">
-                                  <input class="libro_formChecked" type="checkbox" name="acepto_politicas" value="Sí" required>
-                                  Acepto las políticas de privacidad
+                                    <input class="libro_formChecked" type="checkbox" name="acepto_politicas" value="Sí" required>
+                                    Acepto las políticas de privacidad
                                 </label>
 
                                 <button type="submit" class="libro_formSubmit">Enviar</button>
                             </div>
 
-                            <!-- Campos ocultos necesarios para FormSubmit -->
+                            <!-- Campos ocultos para FormSubmit -->
                             <input type="hidden" name="_subject" value="Libro de Reclamaciones">
                             <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next" value="https://guarderiagatubella.netlify.app/gracias.html">
+                            <input type="hidden" name="_next" value="https://guarderiagatubella.netlify.app/gracias-reclamaciones.html">
                             <input type="text" name="_honey" style="display:none">
                         </form>
+
 
                     </div>
                 </div>
@@ -406,41 +409,53 @@
                 <div class="form_rserva-info">
                     <img src="images/reserva.png" alt="" class="form_rserva-image">
                     <div class="form_rserva-txt">
-                        <form action="https://formsubmit.co/gatubellaindira@gmail.com" method="POST"  class="form_rserva-fr">
+                        <form action="https://formsubmit.co/gatubellaindira@gmail.com" method="POST" class="form_rserva-fr">
                             <input type="hidden" name="_cc" value="cuadravillavicencioj@gmail.com">
+
                             <div class="form_title">
                                 <h2 class="form_titulo">Reserva la mejor</h2>
-                                <span class="form_subtitulo">estadía para tu mascota en cusco.</span>
+                                <span class="form_subtitulo">estadía para tu mascota en Cusco.</span>
                             </div>
+
                             <div class="form_inputs">
-                                <input type="text" name="nombres" placeholder="Nombres completos del dueño" class="form_ipt">
-                                <input type="text" name="celular" placeholder="Teléfono/Celular" class="form_ipt">
+                                <input type="text" name="nombres" placeholder="Nombres completos del dueño" class="form_ipt" required>
+                                <input type="text" name="celular" placeholder="Teléfono/Celular" class="form_ipt" required>
                                 <input type="text" name="email" placeholder="Email (Opcional)" class="form_ipt">
+
                                 <div class="inpt_box">
-                                    <select name="size_mascota" id="" class="form_ipt">
+                                    <select name="size_mascota" class="form_ipt" required>
                                         <option disabled selected>Tamaño de tu mascota</option>
                                         <option value="Pequeño">Pequeño</option>
                                         <option value="Mediano">Mediano</option>
                                         <option value="Grande">Grande</option>
                                     </select>
                                 </div>
+
                                 <div class="inpt_box">
                                     <label for="fecha_llegada">Llegada</label>
-                                    <input type="date" id="fecha_llegada" name="fecha_llegada" class="form_ipt" value="">
+                                    <input type="date" id="fecha_llegada" name="fecha_llegada" class="form_ipt" required>
                                 </div>
-                                <div class="inpt_box">
-                                    <label for="fecha_llegada">Salida</label>
-                                    <input type="date" id="fecha_salida" name="fecha_salida" class="form_ipt" value="">
-                                </div>
-                                <p class="form_label" >Tras completar el registro, un asesor se comunicará contigo hoy para acompañarte en el proceso de confirmación de tu reserva. <br>
-                                Durante la conversación, te indicará cómo realizar el abono de 50 soles requerido para asegurar tu lugar.</p>
 
+                                <div class="inpt_box">
+                                    <label for="fecha_salida">Salida</label>
+                                    <input type="date" id="fecha_salida" name="fecha_salida" class="form_ipt" required>
+                                </div>
+
+                                <p class="form_label">
+                                    Tras completar el registro, un asesor se comunicará contigo hoy para acompañarte en el proceso de confirmación de tu reserva. <br>
+                                    Durante la conversación, te indicará cómo realizar el abono de 50 soles requerido para asegurar tu lugar.
+                                </p>
+
+                                <!-- Campos ocultos -->
                                 <input type="hidden" name="_next" value="https://guarderiagatubella.netlify.app/gracias.html">
                                 <input type="hidden" name="_subject" value="Nueva solicitud de reserva desde el sitio web">
+                                <input type="hidden" name="_captcha" value="false">
                                 <input type="text" name="_honey" style="display:none">
                             </div>
+
                             <button class="button form_submit" type="submit">Enviar</button>
                         </form>
+
                     </div>
                 </div>
             </div>
