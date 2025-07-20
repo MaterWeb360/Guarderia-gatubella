@@ -141,6 +141,9 @@ html, body {
 	align-items: flex-start;
 	width: 51%;
 }
+.banner_txt.typ{
+    align-items: center;
+}
 .section_servicios{
 	position: relative;
 	z-index: 1;

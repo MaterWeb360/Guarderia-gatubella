@@ -43,18 +43,23 @@ function abrirReserva(){
   reserva.style.display = "flex";
 }
 function cerrarMenu(){
-  const menu = document.querySelector(".menu_wrp");
-  const buttonOpen = document.querySelector("#openId");
-  const buttonClose = document.querySelector("#closeId");
-  menu.style.display = "none";
-  buttonOpen.style.display = "flex";
-  buttonClose.style.display = "none"; 
+  if (window.innerWidth <= 1337) {
+    const menu = document.querySelector(".menu_wrp");
+    const buttonOpen = document.querySelector("#openId");
+    const buttonClose = document.querySelector("#closeId");
+    menu.style.display = "none";
+    buttonOpen.style.display = "flex";
+    buttonClose.style.display = "none"; 
+  }
 }
+
 function abrirMenu(){
-  const menu = document.querySelector(".menu_wrp");
-  const buttonOpen = document.querySelector("#openId");
-  const buttonClose = document.querySelector("#closeId");
-  menu.style.display = "flex";
-  buttonOpen.style.display = "none";
-  buttonClose.style.display = "flex"; 
+  if (window.innerWidth <= 1337) {
+    const menu = document.querySelector(".menu_wrp");
+    const buttonOpen = document.querySelector("#openId");
+    const buttonClose = document.querySelector("#closeId");
+    menu.style.display = "flex";
+    buttonOpen.style.display = "none";
+    buttonClose.style.display = "flex"; 
+  }
 }
