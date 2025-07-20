@@ -649,6 +649,10 @@ width: 32%;
   color: #5C00FF;
   transform: translateY(-5px); /* Se desplaza hacia arriba */
 }
+.menu_link.current {
+    color: #5C00FF;
+    transform: translateY(-5px);
+}
 .form_rserva{
   /* Overlay que cubre toda la ventana */
   position: fixed;   /* se queda pegado al viewport sin importar el scroll */

@@ -63,3 +63,24 @@ function abrirMenu(){
     buttonClose.style.display = "flex"; 
   }
 }
+function cerrarMenuLink(e) {
+  // Cerrar menú en pantallas pequeñas
+  if (window.innerWidth <= 1337) {
+    const menu = document.querySelector(".menu_wrp");
+    const buttonOpen = document.querySelector("#openId");
+    const buttonClose = document.querySelector("#closeId");
+    menu.style.display = "none";
+    buttonOpen.style.display = "flex";
+    buttonClose.style.display = "none";
+  }
+
+  // Detectar el enlace <a.menu_link> sin importar dónde se hizo clic dentro
+  const clickedLink = e.target.closest(".menu_link");
+
+  if (clickedLink) {
+    const navLinks = document.querySelectorAll(".menu_link");
+    navLinks.forEach(link => link.classList.remove("current"));
+    clickedLink.classList.add("current");
+  }
+}
+
